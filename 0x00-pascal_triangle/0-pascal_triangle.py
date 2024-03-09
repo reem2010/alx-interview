@@ -16,7 +16,7 @@ def pascal_triangle(n):
     if n == 2:
         return [[1], [1, 1]]
     pascale = [[1], [1, 1]]
-    for i in range(1, n):
+    for i in range(1, n-1):
         old = pascale[i]
         newList = [old[j] + old[j+1] for j in range(len(old)-1)]
         newList.append(1)
