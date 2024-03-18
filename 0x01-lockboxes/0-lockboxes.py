@@ -9,3 +9,4 @@ def canUnlockAll(boxes):
     Returns:
         true or false
     """
+    return True
