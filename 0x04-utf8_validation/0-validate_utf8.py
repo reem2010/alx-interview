@@ -12,10 +12,9 @@ def validUTF8(data):
     for i in range(len(data)):
         if data[i] >= 0 and data[i] <= 127:
             data[i] = True
-        elif(data[i] & 192 and i < len(data)-1):
-            data[i] = True
-            data[i + 1] = True
-            i = i + 1
         else:
+            data[i] = False
+    for res in data:
+        if not res:
             return False
     return True
