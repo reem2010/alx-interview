@@ -23,7 +23,7 @@ def validUTF8(data):
             if not(all(128 <= byte <= 191 for byte in data[i+1:i+4])):
                 return False
             i += 4
-        elif not(data[i] <= 127):
+        elif not(0 < data[i] <= 127):
             return False
         else:
             i += 1
