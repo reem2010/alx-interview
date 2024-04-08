@@ -9,7 +9,9 @@ def validUTF8(data):
     Returns:
         True if data is a valid UTF-8 encoding
     """
-    i = 0
+    for i in range(len(data)):
+        data[i] = data[i] & 0xFF
+    i = 0    
     while i < len(data):
         if 194 <= data[i] <= 223 and i < len(data) - 1:
             if not (128 <= data[i + 1] <= 191):
