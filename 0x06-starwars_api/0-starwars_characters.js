@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const request = require('request');
-if (process.argv.length === 3) {
+// if (process.argv.length === 3) {
   request(`https://swapi-api.alx-tools.com/api/films/${process.argv[2]}`, (error, response, body) => {
     if (error) {
       throw error;
@@ -20,4 +20,4 @@ if (process.argv.length === 3) {
       });
     }
   });
-}
+// }
