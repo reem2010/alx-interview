@@ -9,11 +9,11 @@ def calcPerim(i, j, grid):
     rowLen = len(grid[i])
     if ((i > 0 and grid[i - 1][j] == 0) or (i == 0)):
         perimeter = perimeter + 1
-    if ((i < length - 1 and grid[i + 1][j] == 0) or (i == length)):
+    if ((i < length - 1 and grid[i + 1][j] == 0) or (i == length - 1)):
         perimeter = perimeter + 1
     if ((j > 0 and grid[i][j - 1] == 0) or (j == 0)):
         perimeter = perimeter + 1
-    if ((j < rowLen - 1 and grid[i][j + 1] == 0) or (j == rowLen)):
+    if ((j < rowLen - 1 and grid[i][j + 1] == 0) or (j == rowLen - 1)):
         perimeter = perimeter + 1
     return perimeter
 
