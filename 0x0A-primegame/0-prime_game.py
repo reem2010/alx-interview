@@ -7,7 +7,7 @@ def decide(arr, i):
     turn = 0
     Ben = 0
     maria = 0
-    if(len(arr) == 1):
+    if(len(arr) == 0):
         return "Ben"
     while (len(arr) > 0):
         val = arr[0]
