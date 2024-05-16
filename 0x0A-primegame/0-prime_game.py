@@ -25,7 +25,7 @@ def decide(arr, i):
                 mul = mul + 1
             arr.remove(val)
         turn = turn + 1
-    if(Ben >= maria):
+    if(Ben > maria):
         return "Ben"
     else:
         return "Maria"
