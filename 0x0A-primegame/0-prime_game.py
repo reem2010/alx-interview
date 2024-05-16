@@ -31,8 +31,6 @@ def decide(arr, i):
 
 def isWinner(x, nums):
     """Prime Game"""
-    if (x == 1):
-        return "Ben"
     Ben = 0
     maria = 0
     for i in nums:
