@@ -39,4 +39,4 @@ def isWinner(x, nums):
             Ben = Ben + 1
         else:
             maria = maria + 1
-    return "Maria"
+    return "Ben"
