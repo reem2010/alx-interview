@@ -17,4 +17,4 @@ def isWinner(x, nums):
         #         ben = ben + 1
         #     else:
         #         maria = maria + 1
-    return "maria"
+    return "Maria"
